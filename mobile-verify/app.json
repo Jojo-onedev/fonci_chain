@@ -1,0 +1,47 @@
+{
+  "expo": {
+    "name": "DiploChain Verify",
+    "slug": "diplochain-verify",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0f172a"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.diplochain.verify",
+      "infoPlist": {
+        "NSCameraUsageDescription": "DiploChain utilise la caméra pour scanner les QR Codes des diplômes."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#0f172a"
+      },
+      "package": "com.diplochain.verify",
+      "permissions": [
+        "CAMERA",
+        "android.permission.CAMERA"
+      ]
+    },
+    "plugins": [
+      [
+        "expo-barcode-scanner",
+        {
+          "cameraPermission": "DiploChain a besoin de votre caméra pour scanner les QR Codes des diplômes."
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "e91dab60-29a5-4681-bbc4-387e9749a7d5"
+      }
+    }
+  }
+}
