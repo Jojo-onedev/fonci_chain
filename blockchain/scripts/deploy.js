@@ -1,23 +1,23 @@
 const hre = require("hardhat");
 
 async function main() {
-  console.log("Dbut du dploiement du contrat DiploChain...");
+  console.log("Debut du deploiement du contrat FonciChain...");
 
-  // Rcupration du contrat
-  const DiploChain = await hre.ethers.getContractFactory("DiploChain");
+  // Recuperation du contrat
+  const FonciChain = await hre.ethers.getContractFactory("FonciChain");
   
-  // Dploiement
-  const diploChain = await DiploChain.deploy();
+  // Deploiement
+  const fonciChain = await FonciChain.deploy();
 
-  await diploChain.waitForDeployment();
+  await fonciChain.waitForDeployment();
 
-  const address = await diploChain.getAddress();
+  const address = await fonciChain.getAddress();
 
   console.log("-----------------------------------------------");
-  console.log(`Contrat DiploChain dploy avec succs !`);
+  console.log(`Contrat FonciChain deploye avec succes !`);
   console.log(`Adresse du contrat : ${address}`);
   console.log("-----------------------------------------------");
-  console.log("Gardez cette adresse prcieusement, nous en aurons besoin pour le frontend.");
+  console.log("Gardez cette adresse precieusement, nous en aurons besoin pour le frontend.");
 }
 
 main().catch((error) => {

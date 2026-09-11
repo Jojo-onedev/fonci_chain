@@ -1,0 +1,7 @@
+.exit
+await contract.verifyParcel(parcelId);
+await contract.registerParcel(parcelId, dataHash, 0);
+const dataHash = ethers.keccak256(ethers.toUtf8Bytes("donnees-test-nafissa"));
+const parcelId = ethers.keccak256(ethers.toUtf8Bytes("FC-TEST-001"));
+const contract = await FonciChain.attach("0x5FbDB2315678afecb367f032d93F642f64180aa3");
+const FonciChain = await ethers.getContractFactory("FonciChain");

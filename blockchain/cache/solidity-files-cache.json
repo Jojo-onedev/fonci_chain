@@ -1,10 +1,10 @@
 {
   "_format": "hh-sol-cache-2",
   "files": {
-    "C:\\Users\\batio\\OneDrive\\Bureau\\ChainUp\\blockchain\\contracts\\DiploChain.sol": {
-      "lastModificationDate": 1777651070343,
-      "contentHash": "f0caa80542b8e28273fd6b8b9330fa31",
-      "sourceName": "contracts/DiploChain.sol",
+    "C:\\Users\\HP\\fonci_chain\\blockchain\\contracts\\FonciChain.sol": {
+      "lastModificationDate": 1788557060674,
+      "contentHash": "292f6728341896e9408cb3e5d74730ff",
+      "sourceName": "contracts/FonciChain.sol",
       "solcConfig": {
         "version": "0.8.24",
         "settings": {
@@ -34,7 +34,7 @@
         "^0.8.24"
       ],
       "artifacts": [
-        "DiploChain"
+        "FonciChain"
       ]
     }
   }
